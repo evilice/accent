@@ -1,0 +1,12 @@
+.sortable_list{float:left;display:block;width:100%;padding-left: 0;margin: 0 0 10px 0;}
+.sortable_list_item{float:left;width:100%;display:block;cursor:pointer;}
+.sortable_list_item:hover{background: white url(/templates/accent/files/img/sortable-icon.png) 5px center no-repeat;}
+.sortable_list_item.placeholder{height: 25px;width:100%;}
+.field_item{float:left;width:100%;padding: 5px 0;}
+.field_fid{width:100px;float:left}
+.field_module{width:120px;float:left}
+.field_title{width:140px;float:left}
+.field_description{width:250px;float:left;}
+.field_item.bold > div{font-weight: bold;}
+.field_item > div{padding-left:15px;}
+.field_item.bold{background: #CCC;}

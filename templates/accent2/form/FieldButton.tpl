@@ -1,0 +1,1 @@
+<button{foreach from=$f->events() key=k item=v} {$k}="{$v}"{/foreach}{foreach from=$f->attrs() key=k item=v}{if $k!='class'} {$k}="{$v}"{/if}{/foreach}>{$f->title()}</button>

@@ -1,0 +1,18 @@
+{
+    "author":"s.goncharov",
+    "name": "Accent 2",
+    "description":"Обновленная тема админки",
+    "version":"0.1",
+    "screen":"screen.png",
+    "files":{
+        "js":[
+            "{lib}/jquery/jquery.min.js",
+            "{lib}/bootstrap/js/bootstrap.min.js"
+        ],
+        "css":[
+            "/{lib}/bootstrap/css/bootstrap.min.css",
+            "/{tpl}/files/css/styles.css"
+        ]
+    },
+    "places":{ "leftBox":"Главное меню" }
+}

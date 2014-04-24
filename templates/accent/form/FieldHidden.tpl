@@ -1,0 +1,1 @@
+<input type="hidden"{foreach from=$f->attrs() key=k item=v} {$k}="{$v}"{/foreach} />

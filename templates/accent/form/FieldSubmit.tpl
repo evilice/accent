@@ -1,0 +1,1 @@
+<a href="#" onclick="$(this).parents('form').submit(); return false;" class="button">{$f->title()}</a>

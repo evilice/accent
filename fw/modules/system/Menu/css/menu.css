@@ -1,0 +1,15 @@
+/* 
+    Document   : menu
+    Created on : 16.10.2012, 15:08:49
+    Author     : goncharovsv
+    Description:
+        Purpose of the stylesheet follows.
+*/
+div.chlds { margin-left: 20px; }
+div.el > div:first-child { padding: 5px; border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:5px; -khtml-border-radius:10px; }
+div.el > div:first-child:hover { background-color: #ccc; }
+div.el > div:first-child > div { float: right; padding: 0 5px 0 5px; display: none; }
+div.el > div:first-child:hover > div { display: block; }
+div#el_0 > div.elTitle { height: 0px; padding: 0px; border: none; }
+div#el_0 > div.elTitle:hover { background: none; }
+#placeholder { display: none; position: absolute; width: 500px; z-index: 1000; left:0; top:0; background: #efefef; opacity: 0.5; border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:5px; -khtml-border-radius:10px; }

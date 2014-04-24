@@ -1,0 +1,26 @@
+#inchat { border: 1px solid #ccc; }
+
+.inchat_head { border-bottom: 1px solid #ccc; padding: 10px; font-weight: bold; background: linear-gradient(to top, #ccc, #efefef); }
+
+.inchat_body { height: 400px; overflow-y: scroll; }
+.inchat_body > div > div { padding: 2px; margin-bottom: 3px; }
+.inchat_body > div > div:hover { background-color: #efefef; }
+.inchat_body > div > div > div { display: inline-block; vertical-align: top; }
+.inchat_1, .inchat_0, .inchat_2 { width: 160px; }
+.inchat_0 { color: #0967e8; font-weight: bold; }
+.inchat_2 { color: red; }
+.inchat_text { width: 590px; }
+
+.inchat_form { margin-top: 2px; vertical-align: top; }
+.inchat_form > div { display: inline-block; vertical-align: top; }
+.inchat_stext { width: 670px; height: 50px; padding-right: 6px; border: 1px solid #ccc; overflow: hidden; }
+
+#inchat_stext { margin: 0px; height: 50px; width: 670px; border: 0px; }
+/**#inchat_send { margin: 0px; width: 96px; height: 38px; background-color: #999; text-align: center; padding: 15px 3px 3px 3px; font-weight: bold; } */
+#inchat_send { margin: 0px; width: 100px; height: 50px; border: 1px solid #ccc; text-align: center; background: linear-gradient(to top, #ccc, #efefef, #ccc); }
+#inchat_send:hover { background: linear-gradient(to top, #ccc, #efefef); cursor: pointer; }
+#inchat_send > div { position: relative; top: 15px; left: 0px; }
+#inchat_send > div > div.inchat_bt_text { margin-bottom: 0px; font-weight: bold; }
+#inchat_send > div > div.inchat_bt_info { font-size: 10px; font-weight: normal; color: #999; }
+
+.inchat_name > span { font-weight: normal; font-size: 10px; color: #ccc; font-style: italic; }

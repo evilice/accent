@@ -1,0 +1,1 @@
+<a href="#${link}">${title}</a>{{if !last}} &raquo; {{/if}}

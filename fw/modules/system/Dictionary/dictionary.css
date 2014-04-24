@@ -1,0 +1,24 @@
+.dctb { border: 1px solid #ccc; }
+.dctb > div > div { overflow: hidden; }
+.dctb .dctb_header { background-color: #ccc; font-weight: bold; }
+.dctb .dctb_header:hover { background-color: #ccc; }
+
+.dctb_move, .dctb_code, .dctb_title, .dctb_val, .dctb_act { float: left; }
+.dctb_move { width: 20px; height: 20px; }
+.dctb_code { width: 128px; }
+.dctb_title { width: 200px; }
+.dctb_val { width: 278px; }
+.dctb_act { width: 45px; }
+
+.dctb > div:hover { background-color: #fff; }
+
+.dctb > div > div.dctb_move > div { display: none; }
+.dctb > div:hover > div.dctb_move > div { display: block; cursor: pointer; }
+.dctb > div:hover > div.dctb_act > div.edit, 
+.dctb > div:hover > div.dctb_act > div.delete { display: block; }
+
+.dctb > div { padding-top: 3px;  }
+.dctb_act > div { float: right; width: 15px; height: 15px; display: none; cursor: pointer; color: #aaa }
+.dctb_act > div:hover { color: #000; }
+
+#dc_drop_box { display: none; position: absolute; left: 0px; top: 0px; z-index: 100; }

@@ -1,0 +1,9 @@
+{
+    "name": "Page",
+    "version": "0.0.1",
+    "description":"Модуль построения страниц",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}

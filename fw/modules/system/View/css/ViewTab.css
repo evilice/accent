@@ -1,0 +1,19 @@
+.v_tabs { margin-bottom: 10px; }
+
+
+.tabs_content > div { padding: 10px; display: none; }
+.tabs_content > div.selected { display: block; }
+
+.v_tabs > .tabs_items { float: left; width: 24%; border-top: 1px solid #555; border-right: 0px; height: 100%; }
+.v_tabs > .tabs_content { float: left; width: 75%; height: 100%; border: 1px solid #555; border-left: 0px; }
+.v_tabs > .tabs_items > div { border: 1px solid #555; border-top: none; padding: 10px 0 10px 10px; background: #cfcfcf; cursor: pointer; }
+.v_tabs > .tabs_items > .last_item { height: 0px; border: none; border-right: 1px solid #555; background: transparent; padding: 0px; }
+.v_tabs > .tabs_items > div.selected { background-color: transparent; border-right: 0px; }
+
+
+.h_tabs { margin-bottom: 10px; }
+.h_tabs > .tabs_items { }
+.h_tabs > .tabs_content { border: 1px solid #555; border-top: 0px; }
+.h_tabs > .tabs_items > div:not(:last-child) { float: left; border: 1px solid #555; border-right: 0px; padding: 5px; background: #cfcfcf; cursor: pointer; }
+.h_tabs > .tabs_items > div.last_item { width: 100px; border-bottom: 1px solid #555; border-right: 0px; border-top: none; background: transparent; padding: 6px 0 5px 0; }
+.h_tabs > .tabs_items > div.selected { background-color: transparent; border-bottom: 0px; }

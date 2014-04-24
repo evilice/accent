@@ -1,0 +1,1 @@
+<div><label><input type="checkbox" {foreach from=$f->attrs() key=k item=v} {$k}="{$v}"{/foreach}{if $f->isChecked()} checked{/if} />{$f->title()}</label></div>

@@ -1,0 +1,9 @@
+{
+    "name": "Menu",
+    "version": "0.0.1",
+    "description":"Система управления меню и хлебными крошками",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}

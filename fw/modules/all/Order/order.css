@@ -1,0 +1,5 @@
+table.orders { border-collapse: collapse; width: 100%; }
+table.orders td { padding: 5px; }
+table.orders thead { background-color: #666; color: #fff; font-weight: bold; }
+table.orders td.addr { width: 180px; padding-right: 50px; }
+table.orders tbody tr:hover { background-color: #ccc; }

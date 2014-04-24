@@ -1,0 +1,9 @@
+{
+    "name": "User",
+    "version": "0.0.1",
+    "description":"Система управления пользователями",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}

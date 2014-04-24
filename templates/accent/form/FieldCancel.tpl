@@ -1,0 +1,1 @@
+<a href="#" class="button"{foreach from=$f->attrs() key=k item=v}{if $k!='class'} {$k}="{$v}"{/if}{/foreach}>{$f->title()}</a>

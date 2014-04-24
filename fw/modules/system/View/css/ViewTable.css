@@ -1,0 +1,5 @@
+.tvTable { min-width: 200px; float: left; }
+
+.tvTable > div > div { float: left; padding: 3px; }
+.tvTable > div.tvRowH { background-color: #ccc; float: left; }
+.tvTable > div.tvRowH > div { color: #000; font-weight: 600; padding-top: 5px; overflow: hidden; }

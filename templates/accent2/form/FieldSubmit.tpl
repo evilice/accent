@@ -1,0 +1,1 @@
+<input type="submit" value="{$f->title()}"{foreach from=$f->attrs() key=k item=v}{if $k!='value'} {$k}="{$v}"{/if}{/foreach} />

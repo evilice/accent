@@ -1,0 +1,9 @@
+{
+    "name": "DbQuery",
+    "version": "0.0.1",
+    "description":"Конструктор SQL запросов",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":""
+}

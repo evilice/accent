@@ -1,0 +1,7 @@
+.fieldImageSelected > div { display: inline-block; width: 158px; height: 120px; overflow: hidden; margin: 2px; border: 1px solid #ccc; padding: 2px; }
+.fieldImageSelected > div > img { width: 157px; }
+.fieldImageSelected > div > input { width: 152px; margin-bottom: 2px; }
+
+#fieldImageValues > div { display: inline-block; width: 200px; margin: 2px; border: 1px solid #ccc; padding: 2px 2px 0px 2px; }
+#fieldImageValues > div > input { width: 194px; margin-bottom: 2px; }
+#fieldImageValues > div > img { width: 200px; }

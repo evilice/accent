@@ -1,0 +1,9 @@
+{
+    "name": "Pagination",
+    "version": "0.0.1",
+    "description":"Постраничный вывод документов",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}

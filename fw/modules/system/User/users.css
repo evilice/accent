@@ -1,0 +1,12 @@
+.user_vt_perms { border: 1px solid #ccc; }
+.user_vt_perms > div { margin-bottom: 5px; float: left; }
+.user_vt_perms > div:hover { background: #fff; }
+.user_vt_perms > div > div { width: 50px; text-align: center; padding: 0px 3px 0 3px; overflow: hidden; }
+.user_vt_perms > div > div:first-child { text-align: left; }
+.user_vt_perms > div.user_vt_header { background-color: #ccc; float: left; }
+.user_vt_perms > div.user_vt_header:hover { background-color: #ccc; }
+.user_vt_perms > div.user_vt_header > div { padding: 7px 3px 5px 3px; font-weight: bold; }
+.user_vt_perms > div.user_vt_mod > div { float: none; margin-top: 10px; font-weight: bold; }
+.user_vt_perms > div.user_vt_mod:hover { background: none; }
+
+/*#leftMenu { display: none; }*/

@@ -1,0 +1,5 @@
+div.view_box > div:first-child { color: #000; font-weight: 700; padding: 5px 0 0 5px; }
+div.view_box > div:first-child > span { background: url('../img/vbr.png') no-repeat right center; padding-right: 15px; }
+div.view_box > div:first-child > span.view_box_opened { background-image: url('../img/vbd.png'); }
+div.view_box > div:first-child > span:hover { cursor: pointer; }
+div.view_box > div.view_box_content { border: 1px solid #ccc; padding: 5px; display: none; }

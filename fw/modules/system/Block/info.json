@@ -1,0 +1,9 @@
+{
+    "name": "Block",
+    "version": "0.0.1",
+    "description":"Система управления блоками",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}

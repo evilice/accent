@@ -1,0 +1,9 @@
+{
+    "name": "Module",
+    "version": "0.0.1",
+    "description":"Система управления модулями",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}

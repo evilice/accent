@@ -1,0 +1,27 @@
+{
+    "author":"s.goncharov",
+    "name": "Accent",
+    "description":"",
+    "version":"0.12",
+    "screen":"screen.png",
+    "places":{
+        "mainmenu":"Главное меню",
+        "content":"Контент",
+        "breadcrumbs":"Путь",
+        "left box":"Левая колонка"
+    },
+    "files":{
+        "js":[
+            "{lib}/jquery/jquery.min.js",
+            "{lib}/jquery/jquery.corner.js",
+            "{lib}/jquery/jquery.tmpl.min.js",
+            "{lib}/jquery/jquery.tmplPlus.min.js",
+            "{lib}/tinymce/jquery.tinymce.js",
+            "{lib}/accent.js",
+            "{tpl}/files/js/ui.js"
+        ],
+        "css":[
+            "/{tpl}/files/css/styles.css"
+        ]
+    }
+}

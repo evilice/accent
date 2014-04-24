@@ -1,0 +1,9 @@
+{
+    "name": "CCache",
+    "version": "0.0.1",
+    "description":"Система кешированием",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}

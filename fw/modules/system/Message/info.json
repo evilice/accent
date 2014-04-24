@@ -1,0 +1,9 @@
+{
+    "name": "Message",
+    "version": "0.0.1",
+    "description":"Системный месседжер",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"",
+    "addons":[]
+}
