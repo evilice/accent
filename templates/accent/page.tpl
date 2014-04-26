@@ -18,6 +18,7 @@
             {$v}
         </script>
         {/foreach}
+	{if isset($jsd)}<script type="text/javascript">$a = {$jsd};</script>{/if}
     </head>
     <body>
         <div id="win">

@@ -9,6 +9,7 @@ class Page {
     private $template = null;
     private $places = [];
     private $js = [];
+    private $jsd = [];
     private $css = [];
     private $title = '';
     private $keywords = '';
@@ -168,11 +169,19 @@ class Page {
      */
     public function jstmpls($key, $tmpl) { $this->jstmpls[$key] = $tmpl; return $this; }
 
+    /**
+     * Передача данных в JS
+     * @param $name
+     * @param $value
+     */
+    public function jsdata($name, $value) { $this->jsd[$name] = $value; }
+
     public function view(){
         $sm = new Smarty();
 	    $sm->setTemplateDir('templates/'.$this->template.'/');
 
         $sm->assign('js', $this->getJS());
+        if($this->jsd) $sm->assign('jsd', json_encode($this->jsd));
         $sm->assign('css', $this->getCSS());
         $sm->assign('jstmpls', $this->jstmpls);
         $sm->assign('metaKeywords', $this->keywords);
