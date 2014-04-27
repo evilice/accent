@@ -56,12 +56,13 @@ class Module_Search extends Module {
             Cache::setdb(implode(' ', $words), serialize($rate), 'sch');
         } else $rate = unserialize($str['data']);
 
-        $docs = $this->docs($rate, $page);
+        $docs = (($rate)?$this->docs($rate, $page):[]);
 
         return $this->view(count($rate), $page, $filter, $docs);
     }
 
     private function docs($rate, $page) {
+        var_dump($rate);
         $rate = array_chunk($rate, $this->step, true)[$page-1];
         $keys = array_keys($rate);
         array_walk($keys, function(&$item) { $item = intval(substr($item, 2)); });
