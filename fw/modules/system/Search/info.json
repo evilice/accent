@@ -1,0 +1,9 @@
+{
+    "name": "Search",
+    "version": "0.1",
+    "description":"Поисковая система",
+    "package":"core",
+    "author": "goncharovsv",
+    "datetime":"24.04.2014",
+    "addons":""
+}

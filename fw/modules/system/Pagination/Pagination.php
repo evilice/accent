@@ -38,14 +38,16 @@ class Pagination {
     }
 
     public function view() {
-        $sm = new Smarty();
-        $sm->setTemplateDir($this->template);
+        if($this->pages > 1) {
+            $sm = new Smarty();
+            $sm->setTemplateDir($this->template);
 
-        $sm->assign('elements', $this->elements);
-        $sm->assign('pages', $this->pages);
-        $sm->assign('page', $this->page);
-        $sm->assign('url', $this->url);
+            $sm->assign('elements', $this->elements);
+            $sm->assign('pages', $this->pages);
+            $sm->assign('page', $this->page);
+            $sm->assign('url', $this->url);
 
-        return $sm->fetch('pagination.tpl');
+            return $sm->fetch('pagination.tpl');
+        } else return '';
     }
 }
