@@ -44,8 +44,9 @@ class Module_Search extends Module {
                     foreach($rt as $k=>$v) {
                         $id = 'd_'.$v['id'];
                         if(!isset($rate[$id])) $rate[$id] = 0;
-                        $rate[$id] += $v['cnt'];
-                        $rwc[$id] = $v['cnt'];
+                        $cnt = intval($v['cnt'])/mb_strlen(utf8_decode($w));
+                        $rate[$id] += $cnt;
+                        $rwc[$id] = $cnt;
                     }
                     arsort($rwc);
                     Cache::setdb($w, serialize($rwc), 'sch');
@@ -62,7 +63,6 @@ class Module_Search extends Module {
     }
 
     private function docs($rate, $page) {
-        var_dump($rate);
         $rate = array_chunk($rate, $this->step, true)[$page-1];
         $keys = array_keys($rate);
         array_walk($keys, function(&$item) { $item = intval(substr($item, 2)); });

@@ -1,2 +1,2 @@
 <?php
-SQL::set('search', "select t.* from (select LENGTH(concat(title, ' ', adt, ' ', body)) - LENGTH(REPLACE(concat(title, ' ', adt, ' ', body), '?', '')) AS `cnt`, `id` from `docs` where `stat`=1) t where t.cnt>0");
+SQL::set('search', "select t.* from (select CHAR_LENGTH(Lower(concat(title, ' ', adt, ' ', body))) - CHAR_LENGTH(REPLACE(Lower(concat(title, ' ', adt, ' ', body)), '?', '')) AS `cnt`, `id` from `docs` where `stat`=1) t where t.cnt>0");
