@@ -85,19 +85,20 @@ class Cache {
     
     /**
      * Поиск по ключу и типу в БД.
-     * @todo Использовать map() вместо maps()
      * @param String $key
      * @param String $type
      * @return Array
      */
-    public static function getdb ($key, $type = false) {
+    public static function getdb ($key, $type = false, $lifetime = 0) {
         $c = new SQLConstructor();
-        
-        $cond = ['@and'=>[
-            ['cache_key'=>$key],
-            ['type'=>$type],
-        ]];
-        return $c->find('cache', $cond)->maps();
+        $res = $c->find('cache', ['@and'=>[['cache_key'=>$key],['type'=>$type]]])->map();
+
+        if($res && $lifetime != 0 && time()-intval($res['timereg']) > $lifetime) {
+            (new SQLConstructor())->delete('cache', ['cache_key'=>$key])->execute();
+            $res = false;
+        }
+
+        return $res;
     }
     
     /**
@@ -118,10 +119,8 @@ class Cache {
      * @param type $type
      */
     public static function cleardb($type = false) {
-        $c = new SQLConstructor();
-        $c->delete('cache');
-        if($type) $c->where (['type'=>$type]);
-        $c->execute();
+        if($type)
+            return (new SQLConstructor())->delete('cache', ['type'=>$type])->execute();
     }
     
     /**

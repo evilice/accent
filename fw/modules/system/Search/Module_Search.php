@@ -28,10 +28,10 @@ class Module_Search extends Module {
         foreach($tw as $k=>$v)
             if(mb_strlen(utf8_decode($v)) > 2) $words[] = $v;
 
-        $str = Cache::getdb(implode(' ', $words), 'sch');
+        $str = Cache::getdb(implode(' ', $words), 'sch', 600);
         if(!$str) { //--- Проверяем кэш фразы
             foreach($words as $w) {
-                $wch = Cache::getdb($w);
+                $wch = Cache::getdb($w, 'sch', 600);
                 if($wch) { //--- проверяем кэш каждого слова
                     $docs = unserialize($wch['data']);
                     foreach($docs as $k=>$v) {
